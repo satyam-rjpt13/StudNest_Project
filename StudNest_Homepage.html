@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StudNest – The Smart Way To live Student life</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Material Symbols Globe Icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=language" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">StudNest.in</div>
+    <nav>
+      <!-- Language Selector with Globe -->
+      <div class="language-selector">
+        <span class="material-symbols-outlined globe-icon">language</span>
+        <select>
+            <option hidden></option>
+            <option selected>English (default)</option>
+            <option>Hindi</option>
+        </select>
+      </div>
+
+      <!-- List & Login Buttons -->
+      <a href="list-property.html" class="btn-list">List Your Property</a>
+      <a href="Login.html" class="btn-login">Login</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+
+    <div class="hero-search">
+  <div class="search-bar">
+    <i class="fas fa-magnifying-glass search-icon"></i>
+    <input type="text" placeholder="Search by college/university or City..." />
+    <button class="location-btn">
+      <i class="fas fa-location-crosshairs"></i>
+      Locate Me
+    </button>
+  </div>
+</div>
+    <h1>Book Your Hostel Now</h1>
+    <p>StudNest makes it easy to find verified student accommodations.</p>
+  </section>
+  <section class="city-bar">
+  <div class="city-dropdown">
+    <button class="city-btn">Gwalior <span class="arrow">&#9662;</span></button>
+    <ul class="dropdown-menu">
+      <li>Kampoo</li>
+      <li>Morar</li>
+      <li>Gole ka mandir</li>
+    </ul>
+  </div>
+
+  <div class="city-dropdown">
+    <button class="city-btn">Mumbai <span class="arrow">&#9662;</span></button>
+    <ul class="dropdown-menu">
+      <li>Andheri</li>
+      <li>Borivali</li>
+      <li>Thane</li>
+    </ul>
+  </div>
+  <div class="city-dropdown">
+    <button class="city-btn">Mathura <span class="arrow">&#9662;</span></button>
+    <ul class="dropdown-menu">
+      <li>Goverdhan Chauraha</li>
+      <li>Chaumuhan</li>
+      <li>Jait</li>
+    </ul>
+  </div>
+  <div class="city-dropdown">
+    <button class="city-btn">Pune <span class="arrow">&#9662;</span></button>
+    <ul class="dropdown-menu">
+      <li>Kalyani Nagar</li>
+      <li>Koregaon Park</li>
+      <li>Thane</li>
+    </ul>
+  </div>
+  <div class="city-dropdown">
+    <button class="city-btn">Ahemdabad <span class="arrow">&#9662;</span></button>
+    <ul class="dropdown-menu">
+      <li>Satellite</li>
+      <li>Bopal</li>
+      <li>Thaltej</li>
+    </ul>
+  </div>
+
+  
+</section>
+
+<section class="property-categories">
+  <h2 class="property-heading">Choose your Preference</h2>
+
+  <div class="property-scroll-wrapper">
+    <button class="scroll-btn left" onclick="scrollLeft()">&#10094;</button>
+
+    <div class="property-grid" id="propertyGrid">
+      <div class="property-card">
+        <img src="1seaterAC.webp" alt="1-seater AC" />
+        <div class="property-label">1-seater AC</div>
+      </div>
+      <div class="property-card">
+        <img src="2seaterAc.jpg" alt="2-seater AC" />
+        <div class="property-label">2-seater AC</div>
+      </div>
+      <div class="property-card">
+        <img src="3seaterAC.webp" alt="3-seater AC" />
+        <div class="property-label">3-seater AC</div>
+      </div>
+      <div class="property-card">
+        <img src="2seaterAc.jpg" alt="1-seater NON-AC" />
+        <div class="property-label">1-seater NON-AC</div>
+      </div>
+      <div class="property-card">
+        <img src="2seaterAc.jpg" alt="2-seater NON-AC" />
+        <div class="property-label">2-seater NON-AC</div>
+      </div>
+      <div class="property-card">
+        <img src="2seaterAc.jpg" alt="2-seater NON-AC" />
+        <div class="property-label">2-seater NON-AC</div>
+      </div>
+    </div>
+
+    <button class="scroll-btn right" onclick="scrollRight()">&#10095;</button>
+  </div>
+</section>
+<section class="deal-section">
+  <h2>EXPLORE SOME AMAZING OFFERS</h2>
+  <div class="deal-cards-wrapper">
+    
+    <!-- 1st Card -->
+    <div class="deal-card">
+      <div class="image-slider">
+        <button class="nav prev" onclick="prevSlide(this)">&#10094;</button>
+        <div class="slider-images">
+          <img src="2seaterAc.jpg" />
+          <img src="1seaterAC.webp" />
+          <img src="3seaterAC.webp" />
+        </div>
+        <button class="nav next" onclick="nextSlide(this)">&#10095;</button>
+      </div>
+      <div class="deal-info">
+        <div class="rating"><span>8.0</span> Very Good</div>
+        <h3>Hostel One</h3>
+        <p>Delhi</p>
+        <p class="price">₹2,999 <del>₹4,500</del></p>
+        <div class="offer">35% off</div>
+      </div>
+    </div>
+
+    <!-- 2nd Card -->
+    <div class="deal-card">
+      <div class="image-slider">
+        <button class="nav prev" onclick="prevSlide(this)">&#10094;</button>
+        <div class="slider-images">
+          <img src="1seaterAC.webp" />
+          <img src="2seaterAc.jpg" />
+          <img src="3seaterAC.webp" />
+        </div>
+        <button class="nav next" onclick="nextSlide(this)">&#10095;</button>
+      </div>
+      <div class="deal-info">
+        <div class="rating"><span>9.1</span> Excellent</div>
+        <h3>Smart Stay</h3>
+        <p>Bangalore</p>
+        <p class="price">₹1,899 <del>₹3,299</del></p>
+        <div class="offer">42% off</div>
+      </div>
+    </div>
+
+    <!-- 3rd Card -->
+    <div class="deal-card">
+      <div class="image-slider">
+        <button class="nav prev" onclick="prevSlide(this)">&#10094;</button>
+        <div class="slider-images">
+          <img src="1seaterAC.webp" />
+          <img src="2seaterAc.jpg" />
+          <img src="3seaterAC.webp" />
+        </div>
+        <button class="nav next" onclick="nextSlide(this)">&#10095;</button>
+      </div>
+      <div class="deal-info">
+        <div class="rating"><span>9.6</span> Exceptional</div>
+        <h3>PG Bliss</h3>
+        <p>Hyderabad</p>
+        <p class="price">₹3,400 <del>₹6,000</del></p>
+        <div class="offer">43% off</div>
+      </div>
+    </div>
+
+    <!-- 4th Card -->
+    <div class="deal-card">
+      <div class="image-slider">
+        <button class="nav prev" onclick="prevSlide(this)">&#10094;</button>
+        <div class="slider-images">
+          <img src="1seaterAC.webp" />
+          <img src="2seaterAc.jpg" />
+          <img src="3seaterAC.webp" />
+        </div>
+        <button class="nav next" onclick="nextSlide(this)">&#10095;</button>
+      </div>
+      <div class="deal-info">
+        <div class="rating"><span>7.8</span> Good</div>
+        <h3>HomeNest</h3>
+        <p>Kolkata</p>
+        <p class="price">₹2,499 <del>₹3,999</del></p>
+        <div class="offer">38% off</div>
+      </div>
+    </div>
+
+    <!-- 5th Card -->
+    <div class="deal-card">
+      <div class="image-slider">
+        <button class="nav prev" onclick="prevSlide(this)">&#10094;</button>
+        <div class="slider-images">
+          <img src="1seaterAC.webp" />
+          <img src="2seaterAc.jpg" />
+          <img src="3seaterAC.webp" />
+        </div>
+        <button class="nav next" onclick="nextSlide(this)">&#10095;</button>
+      </div>
+      <div class="deal-info">
+        <div class="rating"><span>9.0</span> Wonderful</div>
+        <h3>Zen Rooms</h3>
+        <p>Pune</p>
+        <p class="price">₹3,999 <del>₹5,999</del></p>
+        <div class="offer">33% off</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- Footer --> 
+  <footer class="footer">
+    <p>&copy; 2025 Hostlyf. All rights reserved. | 
+      <a href="terms.html">Terms</a> | 
+      <a href="privacy.html">Privacy</a>
+    </p>
+  </footer>
+    <script>
+     const container = document.getElementById('propertyGrid');
+
+     function scrollLeft() {
+     container.scrollBy({ left: -300, behavior: 'smooth' });
+    }
+
+    function scrollRight() {
+      container.scrollBy({ left: 300, behavior: 'smooth' });
+     }
+     function nextSlide(btn) {
+  const slider = btn.parentElement.querySelector('.slider-images');
+  slider.scrollBy({ left: 280, behavior: 'smooth' });
+}
+function prevSlide(btn) {
+  const slider = btn.parentElement.querySelector('.slider-images');
+  slider.scrollBy({ left: -280, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>
