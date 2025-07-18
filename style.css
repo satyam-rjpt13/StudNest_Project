@@ -39,6 +39,9 @@ body {
   font-weight: bold;
   color: black;
 }
+.navbar .logo:hover{
+  cursor: pointer;
+}
 
 .navbar nav {
   display: flex;
@@ -49,11 +52,13 @@ body {
 .language-selector {
   display: flex;
   align-items: center;
-  /* margin-right: 15px; */
-  /* gap: 4px; */
+
+}
+.language-selector:hover{
+  color: #f97316;
 }
 .language-selector select {
-  width: 24px;        /* small square like icon */
+  width: 24px;        
   height: 24px;
   padding: 0;
   margin: 0;
@@ -65,8 +70,14 @@ body {
   background-size: 16px;
   appearance: none;
   cursor: pointer;
-  color: transparent;       /* hide text */
+  color: transparent;       
 }
+
+.language-selector:hover .globe-icon {
+  color: #f97316;
+}
+
+
 
 /* List Your Property Button */
 .language-selector select option {
@@ -82,7 +93,6 @@ body {
 }
 
 .btn-list:hover {
-  /* background-color: #facc15; */
   color: #f97316;
 }
 

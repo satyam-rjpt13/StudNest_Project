@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudNest - Hostels</title>
+    <link rel="stylesheet" href="hostel_listing.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+ <header class="navbar">
+  <div class="logo">StudNest.in</div>
+
+  <!-- Navbar elements -->
+  <nav class="nav-menu" id="nav-menu">
+<a href="#" title="Wishlist">
+  <span class="material-symbols-outlined wishlist-icon">favorite</span>
+</a>
+    <a href="Homepage.html">Home</a>
+    <a href="#">Contact</a>
+    <a href="#"><img src="profile1.png" alt="Profile" class="profile-pic" /></a>
+  </nav>
+
+  <!-- Hamburger for for small screen -->
+  <button class="hamburger" id="hamburger-btn">☰</button>
+</header>
+
+<!-- Search Bar Section -->
+<div class="search-wrapper">
+  <div class="search-bar">
+    <i class="fas fa-magnifying-glass search-icon"></i>  
+    <input type="text" placeholder="Search by college/university or City..." id="search_icon" />
+    <button class="location-btn">
+      <i class="fas fa-location-crosshairs"></i>
+      Locate Me
+    </button>
+  </div>
+</div>
+
+
+
+<main>
+  <div class="panel-wrapper">
+  <div class="filter-panel">
+    <h1>Filters</h1>
+
+    <!-- Price Section -->
+    <div class="filter-section">
+      <h4>Price</h4>
+      <div class="price-range">
+        <input type="range" min="400" max="2609" value="2609" class="slider" id="maxPrice">
+        <div class="price-labels">
+          <span>₹400</span>
+          <span>₹2609</span>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Collections -->
+    <div class="filter-section">
+      <h4>Category</h4>
+      <label><input type="checkbox"> 1-seater</label><br>
+      <label><input type="checkbox"> 2-seater</label><br>
+      <label><input type="checkbox"> 3-seater</label><br>
+      <label><input type="checkbox"> 4-seater</label><br>
+
+    <hr>
+
+    <!-- Type -->
+    <div class="filter-section">
+      <h4>Type</h4>
+      <label><input type="checkbox"> AC</label><br>
+      <label><input type="checkbox"> Non-AC</label>
+    </div>
+
+    <hr>
+
+    <!-- Distance -->
+    <div class="filter-section">
+      <h4>Distance</h4>
+      <div class="distance-range">
+        <input type="range" min="500" max="10000" value="500" step="100" class="slider" id="distanceSlider">
+        <div class="price-labels">
+          <span>500m</span>
+          <span>10km</span>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="filter-section">
+      <h4>Furnished</h4>
+      <label><input type="checkbox"> Furnished </label><br>
+      <label><input type="checkbox"> Non-Furnished</label>
+    </div>
+
+    <hr>
+
+    <div class="filter-section">
+      <h4>Ratings</h4>
+      <label><input type="checkbox"> 4.5+ </label>
+      <label><input type="checkbox"> 4+</label>
+      <label><input type="checkbox"> 3+</label>
+      <label><input type="checkbox"> 2+</label>
+      <label><input type="checkbox"> 1+</label>
+    </div>
+
+    <hr>
+
+    <div class="filter-section">
+      <h4>Aditional Features</h4>
+      <label><input type="checkbox"> Wifi </label><br>
+      <label><input type="checkbox"> Laundary</label><br>
+      <label><input type="checkbox"> Mess</label><br>
+
+    </div>
+
+    <hr>
+
+    <!-- Show Result Button -->
+    <div class="filter-section">
+      <button class="show-result-btn">Show Results</button>
+    </div>
+
+
+  </div> <!-- /filter-panel -->
+ </div> <!-- /panel-wrapper -->
+
+
+  <div class="content">
+
+  <!-- CARD 1 -->
+  <div class="hostel-card">
+    <div class="image-slider">
+      <img src="1seaterAC.webp" class="slider-image active" alt="Hostel Photo">
+      <img src="2seaterAc.jpg" class="slider-image" alt="Hostel Photo">
+      <video class="slider-image" controls>
+        <source src="hostel-tour.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button class="slider-btn left">&lt;</button>
+      <button class="slider-btn right">&gt;</button>
+    </div>
+    <div class="hostel-info">
+      <h2>XYZ Super Boys Hostel</h2>
+      <p class="location">Near GLA University, Mathura</p>
+      <div class="rating-row">
+        <span class="rating-badge">4.1</span>
+        <span>(329 Ratings) • Very Good</span>
+      </div>
+      <div class="features">
+        <span>📶 Free Wifi</span>
+        <span>🧺 Laundry</span>
+        <span>🏋️ Gym</span>
+      </div>
+      <div class="action-row">
+        <div class="price-section">
+          <h3>₹1099</h3>
+          <p class="tax-note">+ ₹106 taxes & fees • per room </p>
+        </div>
+        <div class="btn-group">
+          <button class="view-btn">View Details</button>
+          <button class="book-btn">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="card-divider" />
+
+  <!-- CARD 2 -->
+  <div class="hostel-card">
+    <div class="image-slider">
+      <img src="1seaterAC.webp" class="slider-image active" alt="Hostel Photo">
+      <img src="2seaterAc.jpg" class="slider-image" alt="Hostel Photo">
+      <video class="slider-image" controls>
+        <source src="hostel-tour.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button class="slider-btn left">&lt;</button>
+      <button class="slider-btn right">&gt;</button>
+    </div>
+    <div class="hostel-info">
+      <h2>ABC Comfort Stay</h2>
+      <p class="location">Near RBS College, Agra</p>
+      <div class="rating-row">
+        <span class="rating-badge">4.5</span>
+        <span>(512 Ratings) • Excellent</span>
+      </div>
+      <div class="features">
+        <span>📶 Free Wifi</span>
+        <span>🧺 Laundry</span>
+        <span>🏋️ Gym</span>
+      </div>
+      <div class="action-row">
+        <div class="price-section">
+          <h3>₹1099</h3>
+          <p class="tax-note">+ ₹106 taxes & fees • per room </p>
+        </div>
+        <div class="btn-group">
+          <button class="view-btn">View Details</button>
+          <button class="book-btn">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="card-divider" />
+
+  <!-- CARD 3 -->
+  <div class="hostel-card">
+    <div class="image-slider">
+      <img src="1seaterAC.webp" class="slider-image active" alt="Hostel Photo">
+      <img src="2seaterAc.jpg" class="slider-image" alt="Hostel Photo">
+      <video class="slider-image" controls>
+        <source src="hostel-tour.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button class="slider-btn left">&lt;</button>
+      <button class="slider-btn right">&gt;</button>
+    </div>
+    <div class="hostel-info">
+      <h2>Sunrise PG</h2>
+      <p class="location">Behind Techno Park, Noida</p>
+      <div class="rating-row">
+        <span class="rating-badge">3.8</span>
+        <span>(218 Ratings) • Good</span>
+      </div>
+      <div class="features">
+        <span>📶 Free Wifi</span>
+        <span>🧺 Laundry</span>
+        <span>🏋️ Gym</span>
+      </div>
+      <div class="action-row">
+        <div class="price-section">
+          <h3>₹1099</h3>
+          <p class="tax-note">+ ₹106 taxes & fees • per room </p>
+        </div>
+        <div class="btn-group">
+          <button class="view-btn">View Details</button>
+          <button class="book-btn">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="card-divider" />
+
+  <!-- CARD 4 -->
+  <div class="hostel-card">
+    <div class="image-slider">
+      <img src="1seaterAC.webp" class="slider-image active" alt="Hostel Photo">
+      <img src="2seaterAc.jpg" class="slider-image" alt="Hostel Photo">
+      <video class="slider-image" controls>
+        <source src="hostel-tour.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button class="slider-btn left">&lt;</button>
+      <button class="slider-btn right">&gt;</button>
+    </div>
+    <div class="hostel-info">
+      <h2>Dream Home PG</h2>
+      <p class="location">Sector 62, Noida</p>
+      <div class="rating-row">
+        <span class="rating-badge">4.2</span>
+        <span>(421 Ratings) • Very Good</span>
+      </div>
+      <div class="features">
+        <span>📶 Free Wifi</span>
+        <span>🧺 Laundry</span>
+        <span>🏋️ Gym</span>
+      </div>
+      <div class="action-row">
+        <div class="price-section">
+          <h3>₹1099</h3>
+          <p class="tax-note">+ ₹106 taxes & fees • per room </p>
+        </div>
+        <div class="btn-group">
+          <button class="view-btn">View Details</button>
+          <button class="book-btn">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="card-divider" />
+
+  <!-- CARD 5 -->
+  <div class="hostel-card">
+    <div class="image-slider">
+      <img src="1seaterAC.webp" class="slider-image active" alt="Hostel Photo">
+      <img src="2seaterAc.jpg" class="slider-image" alt="Hostel Photo">
+      <video class="slider-image" controls>
+        <source src="hostel-tour.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button class="slider-btn left">&lt;</button>
+      <button class="slider-btn right">&gt;</button>
+    </div>
+    <div class="hostel-info">
+      <h2>Metro Boys PG</h2>
+      <p class="location">Near Knowledge Park, Greater Noida</p>
+      <div class="rating-row">
+        <span class="rating-badge">3.9</span>
+        <span>(298 Ratings) • Good</span>
+      </div>
+      <div class="features">
+        <span>📶 Free Wifi</span>
+        <span>🧺 Laundry</span>
+        <span>🏋️ Gym</span>
+      </div>
+      <div class="action-row">
+        <div class="price-section">
+          <h3>₹1099</h3>
+          <p class="tax-note">+ ₹106 taxes & fees • per room </p>
+        </div>
+        <div class="btn-group">
+          <button class="view-btn">View Details</button>
+          <button class="book-btn">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+</main>
+
+<script>
+  const btn = document.getElementById('hamburger-btn');
+  const menu = document.getElementById('nav-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+  function updateSliderBackground(slider) {
+    const min = slider.min;
+    const max = slider.max;
+    const val = slider.value;
+
+    const percentage = ((val - min) / (max - min)) * 100;
+
+    slider.style.background = `linear-gradient(to right, #f97316 0%, #f97316 ${percentage}%, #dcdcdc ${percentage}%, #dcdcdc 100%)`;
+  }
+
+  // Initialize sliders
+  const sliders = document.querySelectorAll(".slider");
+  sliders.forEach(slider => {
+    updateSliderBackground(slider);
+    slider.addEventListener("input", () => updateSliderBackground(slider));
+  });
+  const cards = document.querySelectorAll(".hostel-card");
+
+cards.forEach(card => {
+  const images = card.querySelectorAll(".slider-image");
+  const leftBtn = card.querySelector(".slider-btn.left");
+  const rightBtn = card.querySelector(".slider-btn.right");
+
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    images.forEach(img => img.classList.remove("active"));
+    images[index].classList.add("active");
+  }
+
+  leftBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showSlide(currentIndex);
+  });
+
+  rightBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    showSlide(currentIndex);
+  });
+
+  showSlide(currentIndex);
+});
+
+</script>
+    
+</body>
+</html>
